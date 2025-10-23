@@ -5,7 +5,7 @@ Authors@R:
     person("Jyovika", "Aswale", email = "jasw0002@student.monash.edu", role = c("aut", "cre"))
 Description: Tools and an interactive app to explore healthcare-associated infection data derived from the BHAI package.
 License: MIT + file LICENSE
-Imports: BHAI, dplyr, ggplot2, shiny
+Imports: BHAI, dplyr, ggplot2, shiny, rlang
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
