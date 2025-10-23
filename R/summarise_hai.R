@@ -10,6 +10,7 @@
 #' # data("hai_data_clean", package = "haiInsight")
 #' # summarise_hai(hai_data_clean, by = "Infection_Type")
 #' @export
+#' @importFrom rlang .data
 #' @importFrom dplyr group_by summarise arrange desc
 summarise_hai <- function(data, by = "Infection_Type") {
   if (!by %in% names(data)) stop("`by` must be one of: Infection_Type, Age_Group, Sex.")
