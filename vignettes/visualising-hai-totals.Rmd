@@ -1,0 +1,52 @@
+---
+title: "plot_hai_totals(): Visualising HAI totals"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{plot_hai_totals}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, warning = FALSE,
+  fig.width = 7, fig.height = 4)
+```
+
+This vignette demonstrates `plot_hai_totals()`, a quick wrapper around ggplot2 for bar charts of HAI totals by infection type, age group, or sex.
+
+```{r}
+library(haiInsight)
+data("hai_data_clean")
+head(hai_data_clean)
+```
+
+## By infection type
+
+```{r}
+plot_hai_totals(hai_data_clean, by = "Infection_Type")
+```
+
+## By age group
+
+```{r}
+plot_hai_totals(hai_data_clean, by = "Age_Group")
+```
+
+## By sex
+
+```{r}
+plot_hai_totals(hai_data_clean, by = "Sex")
+```
+
+## Learn More
+
+For a deeper dive into summarising infection counts before plotting,  
+see the companion vignette: **`summarising-hai`**.
+
+<hr>
+<div style="background:#f2f7ff; padding:12px; border-left:4px solid #4682b4; border-radius:6px; margin-top:20px;">
+  <b>Next vignette:</b> Learn how to summarise totals before plotting in 
+  <code>summarising-hai</code>.
+</div>
+
