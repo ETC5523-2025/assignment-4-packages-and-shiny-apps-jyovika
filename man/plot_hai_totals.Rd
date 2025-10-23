@@ -7,10 +7,17 @@
 plot_hai_totals(data, by = "Infection_Type")
 }
 \arguments{
-\item{data}{Data frame (like \code{hai_data_clean})}
+\item{data}{Data frame like \code{hai_data_clean}}
 
-\item{by}{Grouping variable ("Infection_Type", "Age_Group", or "Sex")}
+\item{by}{One of "Infection_Type", "Age_Group", or "Sex"}
 }
 \description{
 Creates a bar chart of total infections by a chosen variable.
+}
+\examples{
+# data("hai_data_clean", package = "haiInsight")
+# plot_hai_totals(hai_data_clean, by = "Infection_Type")
+# plot_hai_totals(hai_data_clean, by = "Age_Group")
+# plot_hai_totals(hai_data_clean, by = "Sex")
+
 }
