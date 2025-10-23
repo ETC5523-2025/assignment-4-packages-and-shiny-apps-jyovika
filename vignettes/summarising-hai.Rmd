@@ -1,0 +1,58 @@
+---
+title: "Summarising HAI data (Germany, 2011)"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Summarising HAI data (Germany, 2011)}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, warning = FALSE,
+  fig.width = 7, fig.height = 4)
+```
+
+This vignette shows how to use`summarise_hai()` to total healthcare-associated infection (HAI) counts by infection type, age group, or sex.
+
+```{r}
+library(haiInsight)
+data("hai_data_clean")
+head(hai_data_clean)
+```
+
+## Totals by infection type (with kable feature)
+
+```{r}
+summarise_hai(hai_data_clean, by = "Infection_Type", as_kable = TRUE)
+```
+
+## Totals by age group
+
+```{r}
+summarise_hai(hai_data_clean)
+```
+
+## Totals by sex (with kable feature)
+
+```{r}
+summarise_hai(hai_data_clean, by = "Sex", as_kable = TRUE)
+```
+
+### Notes
+
+- `hai_data_clean` is derived from the BHAI package’s German PPS 2011 data.
+
+- Headline national estimates (cases, deaths, DALYs) are provided separately in `hai_headlines` for context, sourced from the published study.
+
+## Learn More
+
+For more ways to compare or extend your visualisations of HAI data,  
+see the next vignette: **`summarising-hai`**.
+
+<hr>
+<div style="background:#f2f7ff; padding:12px; border-left:4px solid #4682b4; border-radius:6px; margin-top:20px;">
+  <b>Next vignette:</b> Dive deeper into grouping and summarising results in 
+  <code>summarising-hai</code>.
+</div>
+
