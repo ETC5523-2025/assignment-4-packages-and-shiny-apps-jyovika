@@ -4,20 +4,33 @@
 \alias{summarise_hai}
 \title{Summarise HAI cases}
 \usage{
-summarise_hai(data, by = "Infection_Type")
+summarise_hai(
+  data,
+  by = "Infection_Type",
+  as_kable = FALSE,
+  caption = "Summary of HAI cases by selected grouping variable."
+)
 }
 \arguments{
-\item{data}{A data frame like \code{hai_data_clean} (with columns: Infection_Type, Age_Group, Sex, Count)}
+\item{data}{A data frame like \code{hai_data_clean}
+(must include columns: Infection_Type, Age_Group, Sex, Count)}
 
-\item{by}{One of "Infection_Type", "Age_Group", or "Sex".}
+\item{by}{The column name to group by:
+one of \code{"Infection_Type"}, \code{"Age_Group"}, or \code{"Sex"}.}
+
+\item{as_kable}{Logical. If TRUE, returns a formatted kable table
+(requires the knitr and kableExtra packages).}
+
+\item{caption}{Character. Caption for the table when \code{as_kable = TRUE}.}
 }
 \value{
-A tibble with columns: \code{{by}}, \code{Total}
+A tibble with columns \code{{by}} and \code{Total}.
 }
 \description{
-Totals HAI counts by a chosen variable.
+Totals HAI counts by a chosen variable (e.g. infection type, age group, or sex).
 }
 \examples{
-# data("hai_data_clean", package = "haiInsight")
+data("num_hai_patients_by_stratum", package = "BHAI")
 # summarise_hai(hai_data_clean, by = "Infection_Type")
+
 }
