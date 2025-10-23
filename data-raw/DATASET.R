@@ -4,6 +4,7 @@ library(BHAI)
 library(dplyr)
 library(tidyr)
 library(purrr)
+library(tibble)
 data("german_pps_2011_repr", package = "BHAI")
 
 hai_list <- num_hai_patients_by_stratum
