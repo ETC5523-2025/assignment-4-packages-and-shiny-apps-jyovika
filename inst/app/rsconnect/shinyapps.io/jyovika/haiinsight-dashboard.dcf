@@ -1,0 +1,10 @@
+name: haiinsight-dashboard
+title:
+username: jyovika
+account: jyovika
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15872251
+bundleId: 11086415
+url: https://jyovika.shinyapps.io/haiinsight-dashboard/
+version: 1

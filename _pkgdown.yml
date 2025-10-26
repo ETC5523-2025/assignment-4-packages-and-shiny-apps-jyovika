@@ -13,3 +13,9 @@ articles:
       - summarising-hai
       - visualising-hai-totals
 
+home:
+  links:
+    - text: "Launch Shiny App"
+      href: "https://jyovika.shinyapps.io/haiinsight-dashboard/"
+
+
