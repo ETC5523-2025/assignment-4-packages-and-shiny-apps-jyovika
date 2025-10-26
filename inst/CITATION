@@ -1,0 +1,36 @@
+citHeader("To cite haiInsight and its data sources:")
+
+citEntry(
+  entry = "Article",
+  title = "Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012",
+  author = as.person(c(
+    "Benedikt Zacher", "Sebastian Haller", "Niklas Willrich", "Jan Walter",
+    "Muna Abu Sin", "Alessandro Cassini", "Diamantis Plachouras", "Carl Suetens",
+    "Michael Behnke", "Petra Gastmeier", "Lothar H. Wieler", "Tim Eckmanns"
+  )),
+  journal = "Euro Surveillance",
+  year = "2019",
+  volume = "24",
+  number = "46",
+  pages = "1900135",
+  doi = "10.2807/1560-7917.ES.2019.24.46.1900135",
+  textVersion = paste(
+    "Zacher B, Haller S, Willrich N, Walter J, Abu Sin M, Cassini A, Plachouras D,",
+    "Suetens C, Behnke M, Gastmeier P, Wieler LH, Eckmanns T (2019).",
+    "Application of a new methodology and R package reveals a high burden of",
+    "healthcare-associated infections (HAI) in Germany compared to the average in",
+    "the European Union/European Economic Area, 2011 to 2012.",
+    "Euro Surveillance, 24(46):1900135.",
+    "doi:10.2807/1560-7917.ES.2019.24.46.1900135."
+  )
+)
+
+citEntry(
+  entry = "Manual",
+  title = "haiInsight: Tools and Interactive App for Healthcare-Associated Infection Data",
+  author = as.person("Jyovika Aswale"),
+  year = "2025",
+  note = "R package version 0.0.0.9000",
+  url = "https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika",
+  textVersion = "Aswale, Jyovika (2025). haiInsight: Tools and Interactive App for Healthcare-Associated Infection Data. R package version 0.0.0.9000. Available at: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika"
+)
