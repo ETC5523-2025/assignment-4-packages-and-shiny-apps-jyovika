@@ -1,0 +1,9 @@
+url: https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-jyovika/
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  bslib:
+    primary: "#598392"
+    secondary: "#2C3E50"
+
