@@ -16,5 +16,6 @@ VignetteBuilder: knitr
 Depends: 
     R (>= 3.5)
 LazyData: true
-URL: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika
+URL: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika, https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-jyovika/
 BugReports: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika/issues
+
