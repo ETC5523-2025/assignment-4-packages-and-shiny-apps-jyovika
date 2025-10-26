@@ -1,8 +1,8 @@
 ---
-title: "Summarising HAI data (Germany, 2011)"
+title: "summarise_hai(): Summarising HAI data"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Summarising HAI data (Germany, 2011)}
+  %\VignetteIndexEntry{summarising-hai}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

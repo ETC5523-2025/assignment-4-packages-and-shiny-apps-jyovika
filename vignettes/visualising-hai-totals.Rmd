@@ -1,5 +1,5 @@
 ---
-title: "plot_hai_totals: Visualising HAI totals"
+title: "plot_hai_totals(): Visualising HAI totals"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{plot_hai_totals}
