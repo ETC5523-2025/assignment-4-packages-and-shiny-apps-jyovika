@@ -1,0 +1,46 @@
+/* Global Styling */
+body {
+  background-color: #f3f6f7;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headings */
+h4, h5 {
+  color: #004D40;
+  font-weight: 600;
+}
+
+/* Panels */
+.sidebarPanel {
+  background-color: #FFFFFF !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  padding: 18px;
+}
+
+.mainPanel {
+  background-color: #FFFFFF !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 25px;
+}
+
+/* Labels and Inputs */
+label, .control-label, .selectize-input, .form-control {
+  color: #1B2631;
+  font-size: 14px;
+}
+
+/* Dividers and Tables*/
+hr {
+  border-top: 1px solid #E6EEF0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+thead {
+  background-color: #598392;
+  color: white;
+}
