@@ -5,7 +5,7 @@ Authors@R:
     person("Jyovika", "Aswale", email = "jasw0002@student.monash.edu", role = c("aut", "cre"))
 Description: Tools and an interactive app to explore healthcare-associated infection data derived from the BHAI package.
 License: MIT + file LICENSE
-Imports: BHAI, dplyr, ggplot2, shiny, rlang
+Imports: BHAI, dplyr, ggplot2, shiny, rlang, bslib
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
@@ -16,3 +16,5 @@ VignetteBuilder: knitr
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika
+BugReports: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-jyovika/issues
