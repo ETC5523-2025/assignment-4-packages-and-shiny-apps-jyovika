@@ -2,7 +2,7 @@
 title: "summarise_hai(): Summarising HAI data"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{summarising-hai}
+  %\VignetteIndexEntry{summarise_hai(): Summarising HAI data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

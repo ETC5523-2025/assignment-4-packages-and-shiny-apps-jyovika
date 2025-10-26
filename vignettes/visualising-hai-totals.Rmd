@@ -2,7 +2,7 @@
 title: "plot_hai_totals(): Visualising HAI totals"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{plot_hai_totals}
+  %\VignetteIndexEntry{plot_hai_totals(): Visualising HAI totals}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
