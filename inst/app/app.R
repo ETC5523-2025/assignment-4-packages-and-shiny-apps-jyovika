@@ -10,10 +10,29 @@ library(ggplot2)
 library(dplyr)
 library(haiInsight)
 
+pal <- list(
+  bg    = "#f8f9fa",
+  panel = "#FFFFFF",
+  bar   = "#2C3E50",  # bars
+  accent= "#598392",  # headers / highlights
+  deep  = "#004D40",  # secondary accent
+  grid  = "#E6EEF0",
+  text  = "#1B2631"
+)
+
+app_theme <- bslib::bs_theme(
+  bootswatch = "flatly",
+  primary    = pal$accent,
+  secondary  = pal$bar,
+  base_font  = font_google("Inter"),
+  heading_font = font_google("Inter Tight")
+)
+
 data("hai_data_clean", package = "haiInsight")
 
 ui <- fluidPage(
-  theme = bs_theme(bootswatch = "flatly"),
+  theme = app_theme,
+  tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
   titlePanel("Healthcare-Associated Infections - Germany, 2011 (haiInsight)"),
 
   sidebarLayout(
@@ -85,7 +104,12 @@ server <- function(input, output, session) {
     req(input$view_mode)
     validate(need(nrow(df) > 0, "No data available for this selection."))
 
-    plot_hai_totals(df, by = input$view_mode)
+    plot_hai_totals(
+      df,
+      by = input$view_mode,
+      show_prop = isTRUE(input$show_prop),  # <- make the toggle work
+      pal = pal                              # <- consistent colours
+    )
   })
 
   output$tbl_summary <- renderUI({
