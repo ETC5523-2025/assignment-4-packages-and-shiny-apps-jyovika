@@ -4,7 +4,7 @@
 \alias{plot_hai_totals}
 \title{Plot total HAI counts}
 \usage{
-plot_hai_totals(data, by = "Infection_Type")
+plot_hai_totals(data, by = "Infection_Type", show_prop = FALSE, pal = NULL)
 }
 \arguments{
 \item{data}{Data frame like \code{hai_data_clean}}
